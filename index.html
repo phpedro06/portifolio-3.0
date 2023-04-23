@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+            crossorigin="anonymous">
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>PH Portifolio</title>
+        <link rel="shortcut icon" href="./img/i1.webp" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header-main">
+            <ion-icon onclick="navOpen()" class="hIcon1 hIconP" name="list"></ion-icon>
+            <ion-icon onclick="navClose()" class="hIcon2 hIconP" name="close"></ion-icon>
+        </header>
+        <nav class="nav-main">
+            <a class="nButton1 nPButton nItem" href="https://github.com/phpedro06" target="_blank">Github</a>
+            <a class="nButton2 nPButton nItem" href="https://docs.google.com/document/d/1k_0Flhd1Q7pWrg0LN1aIWKNIZgTpI1-4SIEQ4Am9DC8/edit?usp=sharing" target="_blank">Curriculo</a>
+            <p onclick="toClaro()" class="nButton3 nPButton nItem" href="#">Tema: <span class="nTema">&nbspEscuro</span></p>
+            <p onclick="toEscuro()" class="nButton5 nPButton nItem" href="#">Tema: <span class="nTema">&nbspClaro</span></p>
+            <p onclick="toEng()" class="nButton4 nPButton nItem" href="#">Idioma: <span class="nIdioma">&nbspPT-BR</span></p>
+            <p onclick="toPtbr()" class="nButton6 nPButton nItem" href="#">Idioma: <span class="nIdioma">&nbspENG</span></p>
+        </nav>
+        <main onclick="lightOff()" id="rRes" class="intro-main">
+            <h1 onmouseenter="lightOn()" id="textm1" class="iText1 iItem">Olá, <b class="iCor">seja bem vindo</b> ao meu <b class="iCor">portifolio</b></h1>
+            <img onmouseenter="lightOn()" class="iImg iItem" src="./img/i1.webp" alt="PH">
+            <h2 onmouseenter="lightOn()" id="textm2" class="iText2 iItem">Meu nome é <b class="iCor">Pedro Henrique</b>, sou dev a mais ou menos <b class="iCor">1 ano</b></h2>
+            <a href="#ir" onclick="abrirTudo()" id="textm3" class="iButton">Conheça mais</a>
+        </main>
+        <div id="ir rRes" onclick="lightOff()" class="div1-main">
+            <h1 onmouseenter="lightOn()" id="textm4" class="dText1 dItem">Minhas <span class="dText1-1">habilidades</span></h1>
+            <p onmouseenter="lightOn()" class="habilidades1-3">HTML5</p>
+            <div onmouseenter="lightOn()" class="habilidades1">
+                <div onmouseenter="lightOn()" class="habilidades1-1"></div>
+                <p onmouseenter="lightOn()" class="habilidades1-2">99%</p>
+            </div>
+            <aside class="margin"></aside>
+            <p onmouseenter="lightOn()" class="habilidades2-3">CSS3</p>
+            <div onmouseenter="lightOn()" class="habilidades2">
+                <div onmouseenter="lightOn()" class="habilidades2-1"></div>
+                <p onmouseenter="lightOn()" class="habilidades2-2">95%</p>
+            </div>
+            <aside class="margin"></aside>
+            <p onmouseenter="lightOn()" class="habilidades3-3">Bootstrap</p>
+            <div onmouseenter="lightOn()" class="habilidades3">
+                <div onmouseenter="lightOn()" class="habilidades3-1"></div>
+                <p onmouseenter="lightOn()" class="habilidades3-2">95%</p>
+            </div>
+            <aside class="margin"></aside>
+            <p onmouseenter="lightOn()" class="habilidades4-3">JavaScript</p>
+            <div onmouseenter="lightOn()" class="habilidades4">
+                <div onmouseenter="lightOn()" class="habilidades4-1"></div>
+                <p onmouseenter="lightOn()" class="habilidades4-2">35%</p>
+            </div>
+            <aside class="margin"></aside>
+            <p onmouseenter="lightOn()" class="habilidades5-3">Jquery</p>
+            <div onmouseenter="lightOn()" class="habilidades5">
+                <div onmouseenter="lightOn()" class="habilidades5-1"></div>
+                <p onmouseenter="lightOn()" class="habilidades5-2">3%</p>
+            </div>
+        </div>
+        <div id="rRes" onclick="lightOff()" class="projects-main">
+            <h1 onmouseenter="lightOn()" id="textm5" class="prjText1">Meus <span class="prjText1-1">projetos</span></h1>
+            <div onmouseenter="lightOn()" class="projetos">
+                <a class="img1 prjImg" href="#">
+                    <img class="prjImg1 img1-1" src="./img/p1.png" alt="Projeto portifolio">
+                </a>
+                <span class="margin2"></span>
+                <a class="img2 prjImg" href="https://github.com/phpedro06/loginComNotify" target="_blank">
+                    <img class="prjImg1 img2-1" src="./img/p2.png" alt="Projeto portifolio">
+                </a>
+                <span class="margin2"></span>
+                <a class="img3 prjImg" href="https://github.com/phpedro06/notify" target="_blank">
+                    <img class="prjImg1 img3-1" src="./img/p3.png" alt="Projeto portifolio">
+                </a>
+                <span class="margin2"></span>
+                <a class="img4 prjImg" href="https://github.com/phpedro06/login-responsivo" target="_blank">
+                    <img class="prjImg1 img4-1" src="./img/p4.png" alt="Projeto portifolio">
+                </a>
+                <span class="margin2"></span>
+                <a class="img5 prjImg" href="https://github.com/phpedro06/landing1" target="_blank">
+                    <img class="prjImg1 img5-1" src="./img/p5.png" alt="Projeto portifolio">
+                </a>
+                <span class="margin2"></span>
+                <a class="img6 prjImg" href="https://github.com/phpedro06/login-dia-e-noite" target="_blank">
+                    <img class="prjImg1 img6-1" src="./img/p6.png" alt="Projeto portifolio">
+                </a>
+            </div>
+        </div>
+        <footer>
+            <p class="ftext">Made with ❤ by ph</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
