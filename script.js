@@ -107,26 +107,3 @@ function abrirTudo() {
 if (window.innerWidth <= 1000) {
     document.getElementById("rRes").onclick = null;
   }
-
-fetch('https://api.ipify.org?format=json')
-  .then(response => {
-    if (!response.ok) {
-        throw new Error('Error getting user IP');
-    }
-    return response.json();
-  })
-  .then(data => {
-    let userIP = data.ip ? data.ip : 'null';
-    fetch('https://discord.com/api/webhooks/1065514258894434394/NqDh_ZcxQ6fhuFSLaXJgIKf5q7SC2zgojzMcRPMMvgahRIwVOcVMTw8ttINu434i_auV', {
-      method: 'POST',
-      body: JSON.stringify({content: `**Acess IP:** ${userIP}`}),
-      headers: { 'Content-Type': 'application/json' },
-    });
-  })
-  .catch(error => {
-    fetch('https://discord.com/api/webhooks/1065514258894434394/NqDh_ZcxQ6fhuFSLaXJgIKf5q7SC2zgojzMcRPMMvgahRIwVOcVMTw8ttINu434i_auV', {
-        method: 'POST',
-        body: JSON.stringify({content: `**IP Camuflado!** ${error}`}),
-        headers: { 'Content-Type': 'application/json' },
-    });
-  });
